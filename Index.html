@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Poblacion Ilawod, Passi City Iloilo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* ========= MERGED CSS (index.css + Services.css) ========= */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #2A6D99;
+            background: linear-gradient(135deg, #FAFCFB 0%, #B9F0F9 100%);
+            min-height: 100vh;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            color: #2A6D99;
+            padding: 1rem 0;
+            box-shadow: 0 4px 20px rgba(3, 121, 199, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo-section { display: flex; align-items: center; gap: 15px; }
+
+        .custom-logo {
+            width: 60px; height: 60px; object-fit: cover; border-radius: 50%;
+            box-shadow: 0 8px 25px rgba(3, 121, 199, 0.2);
+            border: 3px solid #B9F0F9;
+        }
+
+        .logo-text h1 { font-size: 1.8rem; font-weight: 700; color: #0379C7; margin: 0; }
+        .logo-text p { font-size: 0.9rem; color: #78AEC6; margin: 0; }
+
+        .nav-menu { display: flex; list-style: none; gap: 2rem; }
+        .nav-menu a {
+            color: #2A6D99; text-decoration: none; font-weight: 600;
+            padding: 0.5rem 1rem; border-radius: 25px;
+            transition: all 0.3s ease; position: relative;
+        }
+
+        .nav-menu a:hover {
+            background: linear-gradient(135deg, #0379C7, #2A6D99);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(3, 121, 199, 0.3);
+        }
+
+        .nav-menu a.active {
+            background: linear-gradient(135deg, #0379C7, #2A6D99);
+            color: white;
+            box-shadow: 0 8px 20px rgba(3, 121, 199, 0.3);
+        }
+
+        .hamburger {
+            display: none; flex-direction: column; cursor: pointer; gap: 4px;
+        }
+
+        .hamburger span {
+            width: 25px; height: 3px; background: #0379C7; border-radius: 3px;
+            transition: 0.3s;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(rgba(3, 121, 199, 0.85), rgba(42, 109, 153, 0.85)),
+                        url('background1.jpg') center/cover;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            position: relative;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1), transparent);
+        }
+
+        .hero-content {
+            position: relative; z-index: 2; max-width: 900px; margin: 0 auto;
+        }
+
+        .hero h2 {
+            font-size: 3.8rem; font-weight: 700; margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5); line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.4rem; margin-bottom: 2.5rem;
+            opacity: 0.95; font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #B9F0F9, #78AEC6);
+            color: #0379C7;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            box-shadow: 0 15px 40px rgba(120, 174, 198, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 25px 50px rgba(120, 174, 198, 0.6);
+            color: #0379C7;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #0379C7 0%, #2A6D99 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            border-radius: 25px;
+            margin: 5rem 0;
+        }
+
+        .cta-section h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+
+        /* Full-width CTA */
+        .cta-section-full {
+            background: linear-gradient(135deg, #0379C7 0%, #2A6D99 50%, #B9F0F9 100%);
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-top: 5rem;
+        }
+
+        .cta-section-full::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            pointer-events: none;
+        }
+
+        .cta-section-full::after {
+            content: '';
+            position: absolute; bottom: 0; left: 0; right: 0;
+            height: 100px;
+            background: linear-gradient(transparent, rgba(255,255,255,0.2));
+            z-index: 2;
+        }
+
+        .cta-content { position: relative; z-index: 2; max-width: 1000px; margin: 0 auto; }
+        .cta-text h2 {
+            font-size: 3rem; margin-bottom: 1.5rem; font-weight: 700;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        }
+        .cta-text p {
+            font-size: 1.3rem; margin-bottom: 3rem; opacity: 0.95;
+            max-width: 700px; margin-left: auto; margin-right: auto;
+        }
+
+        .cta-buttons { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+
+        .cta-button {
+            display: inline-flex; align-items: center; gap: 0.8rem;
+            padding: 1.3rem 2.5rem;
+            border-radius: 50px; text-decoration: none; font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            border: 2px solid transparent;
+        }
+
+        .cta-button.primary { background: rgba(255, 255, 255, 0.95); color: #0379C7; }
+        .cta-button.primary:hover {
+            background: white; transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.3); color: #0379C7;
+        }
+
+        .cta-button.secondary { background: transparent; color: white; border-color: rgba(255,255,255,0.3); }
+        .cta-button.secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(255,255,255,0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Sections */
+        .welcome { padding: 5rem 0; background: #FAFCFB; }
+
+        .welcome-content {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
+            align-items: center; max-width: 1000px; margin: 0 auto;
+        }
+
+        .welcome-text h3 { font-size: 2.5rem; color: #0379C7; margin-bottom: 1.5rem; font-weight: 700; }
+        .welcome-text p { font-size: 1.1rem; color: #2A6D99; line-height: 1.8; margin-bottom: 1.5rem; }
+
+        .welcome-text .highlight {
+            background: linear-gradient(120deg, #B9F0F9, #78AEC6);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(120, 174, 198, 0.3);
+        }
+
+        .seal-container {
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            text-align: center; position: relative; width: 100%;
+        }
+
+        .circular-seal {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 320px;
+            height: 320px;
+            margin: 0 auto;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #B9F0F9 0%, #78AEC6 50%, #0379C7 100%);
+            box-shadow:
+                0 25px 50px rgba(120, 174, 198, 0.4),
+                inset 0 2px 10px rgba(255, 255, 255, 0.3),
+                0 0 0 8px #FAFCFB;
+            transition: all 0.4s ease;
+        }
+
+        .circular-seal:hover {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow:
+                0 35px 70px rgba(3, 121, 199, 0.5),
+                inset 0 2px 10px rgba(255, 255, 255, 0.4),
+                0 0 0 12px #FAFCFB;
+        }
+
+        .barangay-logo {
+            width: 240px; height: 240px; object-fit: cover; border-radius: 50%;
+            border: 6px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            position: relative; z-index: 2;
+        }
+
+        .logo-label {
+            position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%);
+            background: linear-gradient(135deg, #0379C7, #2A6D99);
+            color: white; font-size: 1.1rem; font-weight: 700;
+            padding: 10px 25px; border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(3, 121, 199, 0.4);
+            white-space: nowrap; letter-spacing: 1px;
+            text-transform: uppercase; font-size: 0.9rem;
+        }
+
+        /* Stats */
+        .stats {
+            background: linear-gradient(135deg, #0379C7 0%, #2A6D99 100%);
+            color: white; padding: 3rem 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem; text-align: center;
+        }
+
+        .stat-item i { font-size: 3rem; margin-bottom: 1rem; opacity: 0.8; }
+        .stat-number { font-size: 2.5rem; font-weight: 700; display: block; margin-bottom: 0.5rem; }
+
+        /* About */
+        .about-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #FAFCFB 0%, #E8F4FD 100%);
+        }
+
+        .section-header { text-align: center; margin-bottom: 4rem; }
+        .section-header h2 { font-size: 2.8rem; color: #0379C7; margin-bottom: 1rem; font-weight: 700; }
+        .section-header p { font-size: 1.2rem; color: #2A6D99; max-width: 600px; margin: 0 auto; }
+
+        .history-card {
+            background: white; border-radius: 20px; padding: 3rem; margin-bottom: 4rem;
+            box-shadow: 0 20px 60px rgba(3, 121, 199, 0.1);
+            border: 1px solid rgba(120, 174, 198, 0.2);
+        }
+
+        .history-content { display: flex; align-items: flex-start; gap: 2rem; }
+        .history-icon {
+            width: 80px; height: 80px;
+            background: linear-gradient(135deg, #0379C7, #2A6D99);
+            border-radius: 20px;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 15px 40px rgba(3, 121, 199, 0.3);
+        }
+        .history-icon i { font-size: 2rem; color: white; }
+        .history-content h3 { font-size: 2rem; color: #0379C7; margin-bottom: 1rem; }
+
+        .vision-mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 4rem; }
+        .vision-card, .mission-card {
+            background: white; padding: 2.5rem; border-radius: 20px; text-align: center;
+            box-shadow: 0 15px 40px rgba(3, 121, 199, 0.1);
+            transition: all 0.3s ease; border: 1px solid rgba(120, 174, 198, 0.2);
+        }
+        .vision-card:hover, .mission-card:hover { transform: translateY(-10px); box-shadow: 0 25px 60px rgba(3, 121, 199, 0.2); }
+
+        .vm-icon {
+            width: 70px; height: 70px; margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, #B9F0F9, #78AEC6);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.8rem; color: #0379C7;
+            box-shadow: 0 10px 30px rgba(120, 174, 198, 0.3);
+        }
+
+        .vision-card h4 { color: #0379C7; font-size: 1.5rem; margin-bottom: 1rem; font-weight: 700; }
+        .mission-card h4 { color: #2A6D99; font-size: 1.5rem; margin-bottom: 1rem; font-weight: 700; }
+
+        .officials-section h3 { text-align: center; font-size: 2.5rem; color: #0379C7; margin-bottom: 1rem; }
+        .officials-subtitle { text-align: center; font-size: 1.2rem; color: #78AEC6; margin-bottom: 3rem; }
+
+        .officials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+
+        .official-card {
+            background: white; border-radius: 20px; padding: 2rem;
+            display: flex; align-items: center; gap: 1.5rem;
+            box-shadow: 0 15px 40px rgba(3, 121, 199, 0.1);
+            border: 1px solid rgba(120, 174, 198, 0.2);
+            transition: all 0.3s ease;
+            position: relative; overflow: hidden;
+        }
+
+        .official-card::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; height: 4px;
+            background: linear-gradient(90deg, #0379C7, #2A6D99);
+        }
+
+        .official-card:hover { transform: translateY(-5px); box-shadow: 0 25px 60px rgba(3, 121, 199, 0.2); }
+
+        .official-logo {
+            width: 70px; height: 70px; border-radius: 15px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; color: white;
+            position: relative;
+            flex-shrink: 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .punong-barangay .official-logo { background: linear-gradient(135deg, #FFD700, #FFA500); font-size: 1.8rem; box-shadow: 0 0 30px rgba(255, 215, 0, 0.5); }
+        .kagawad-1 .official-logo { background: linear-gradient(135deg, #FF6B6B, #FF8E8E); }
+        .kagawad-2 .official-logo { background: linear-gradient(135deg, #4ECDC4, #44A08D); }
+        .kagawad-3 .official-logo { background: linear-gradient(135deg, #45B7D1, #96C93D); }
+        .kagawad-4 .official-logo { background: linear-gradient(135deg, #FECA57, #FF9FF3); }
+        .kagawad-5 .official-logo { background: linear-gradient(135deg, #FF9FF3, #F368E0); }
+        .kagawad-6 .official-logo { background: linear-gradient(135deg, #54A0FF, #5F27CD); }
+        .kagawad-7 .official-logo { background: linear-gradient(135deg, #00D2D3, #5F27CD); }
+
+        .official-info h4 { color: #78AEC6; margin: 0 0 0.5rem 0; font-size: 1rem; font-weight: 600; }
+        .official-info h5 { color: #0379C7; margin: 0 0 0.5rem 0; font-size: 1.1rem; }
+        .official-info p { color: #2A6D99; margin: 0; font-size: 0.95rem; }
+
+        /* ========= NEWS ========= */
+        .news-section { padding: 5rem 0; background: #FAFCFB; }
+        .news-title { text-align: center; margin-bottom: 3rem; }
+        .news-title h2 { font-size: 2.8rem; color: #0379C7; font-weight: 700; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .news-card {
+            background: white; padding: 2rem; border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(3, 121, 199, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(120, 174, 198, 0.2);
+            position: relative; overflow: hidden;
+        }
+        .news-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #0379C7, #2A6D99); }
+        .news-card:hover { transform: translateY(-10px); box-shadow: 0 25px 60px rgba(3, 121, 199, 0.2); }
+        .news-date { font-size: 0.85rem; color: #78AEC6; margin-bottom: 10px; font-weight: 500; }
+        .news-card h3 { color: #0379C7; font-size: 1.4rem; margin-bottom: 10px; }
+        .news-card p { color: #2A6D99; font-size: 0.95rem; line-height: 1.6; }
+
+        /* ========= CONTACT ========= */
+        .contact-section { padding: 5rem 0; background: linear-gradient(135deg, #FAFCFB 0%, #E8F4FD 100%); }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+
+        .contact-form {
+            background: white; padding: 2.5rem; border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(3, 121, 199, 0.1);
+        }
+
+        .contact-form h3 { margin-bottom: 1.5rem; color: #0379C7; }
+
+        .form-group { margin-bottom: 1.2rem; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 5px; color: #2A6D99; }
+        .form-group input, .form-group textarea {
+            width: 100%; padding: 10px; border-radius: 10px;
+            border: 1px solid #ccc; font-family: 'Poppins', sans-serif;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #0379C7; outline: none;
+            box-shadow: 0 0 5px rgba(3, 121, 199, 0.3);
+        }
+
+        .contact-btn {
+            width: 100%; padding: 12px;
+            background: linear-gradient(135deg, #0379C7, #2A6D99);
+            color: white; border: none; border-radius: 25px;
+            font-weight: 600; cursor: pointer; transition: 0.3s;
+        }
+
+        .contact-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(3, 121, 199, 0.3); }
+
+        .contact-info {
+            background: white; padding: 2.5rem; border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(3, 121, 199, 0.1);
+        }
+
+        .contact-info h3 { margin-bottom: 1.5rem; color: #0379C7; }
+
+        .info-box { display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; color: #2A6D99; }
+        .info-box i { color: #0379C7; font-size: 1.2rem; }
+
+        .map-container { margin-top: 1.5rem; }
+        .map-container iframe { width: 100%; height: 250px; border-radius: 15px; }
+
+        /* ========= SERVICES (from Services.css) ========= */
+        .services-section { padding: 2rem 0 5rem; }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 25px;
+            padding: 3rem 2.5rem;
+            box-shadow: 0 20px 60px rgba(3, 121, 199, 0.1);
+            border: 1px solid rgba(120, 174, 198, 0.2);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #0379C7, #2A6D99, #B9F0F9);
+        }
+
+        .service-card:hover { transform: translateY(-15px); box-shadow: 0 35px 80px rgba(3, 121, 199, 0.25); }
+
+        .service-icon {
+            width: 90px; height: 90px; margin: 0 auto 2rem;
+            background: linear-gradient(135deg, #B9F0F9, #78AEC6);
+            border-radius: 20px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.5rem; color: #0379C7;
+            box-shadow: 0 15px 40px rgba(120, 174, 198, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+            background: linear-gradient(135deg, #0379C7, #2A6D99);
+            color: white;
+        }
+
+        .service-card h3 { font-size: 1.8rem; color: #0379C7; margin-bottom: 1.5rem; font-weight: 700; }
+        .service-card .service-time { color: #78AEC6; font-size: 1rem; margin-bottom: 1.5rem; font-weight: 600; }
+        .service-card p { color: #2A6D99; margin-bottom: 2rem; line-height: 1.7; }
+
+        .service-requirements {
+            background: #FAFCFB;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            border-left: 4px solid #0379C7;
+        }
+
+        .service-requirements h4 { color: #0379C7; margin-bottom: 1rem; font-size: 1.1rem; }
+
+        .requirements-list { list-style: none; padding: 0; }
+        .requirements-list li {
+            padding: 0.3rem 0;
+            color: #2A6D99;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .requirements-list li::before {
+            content: '✓'; position: absolute; left: 0;
+            color: #0379C7; font-weight: bold;
+        }
+
+        /* Emergency Hotlines (optional styles if you add it later) */
+        .emergency-section {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%);
+            color: white;
+            padding: 4rem 0;
+            margin: 5rem 0;
+            border-radius: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .emergency-section::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            pointer-events: none;
+        }
+
+        .emergency-content { position: relative; z-index: 2; text-align: center; }
+        .emergency-content h2 { font-size: 2.8rem; margin-bottom: 1rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); }
+        .emergency-content p { font-size: 1.3rem; margin-bottom: 3rem; opacity: 0.95; }
+
+        .hotlines-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hotline-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .hotline-card:hover { transform: translateY(-5px); background: rgba(255, 255, 255, 0.25); box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+
+        .hotline-icon {
+            width: 70px; height: 70px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.8rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .hotline-number { font-size: 2.2rem; font-weight: 700; color: white; margin-bottom: 0.5rem; letter-spacing: 1px; }
+        .hotline-label { font-size: 1.1rem; opacity: 0.9; font-weight: 600; }
+
+        /* Loading Overlay */
+        #loading {
+            position: fixed; width: 100%; height: 100%;
+            background: white; display: flex;
+            justify-content: center; align-items: center;
+            z-index: 9999;
+        }
+
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #0379C7;
+            border-radius: 50%;
+            width: 60px; height: 60px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        /* Animations */
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes float { 0%,100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+
+        .fade-in-up { animation: fadeInUp 0.8s ease forwards; }
+
+        .hero-content,
+        .welcome-text,
+        .circular-seal,
+        .logo-label { opacity: 0; animation-fill-mode: forwards; }
+
+        .hero-content { animation-delay: 0.2s; }
+        .welcome-text { animation-delay: 0.4s; }
+        .circular-seal { animation: fadeInUp 0.8s ease 0.6s forwards, float 3s ease-in-out 1s infinite; }
+        .logo-label { animation-delay: 0.8s; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%; left: 0; right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            }
+
+            .nav-menu.active { display: flex; }
+            .hamburger { display: flex; }
+
+            .hero h2 { font-size: 2.5rem; }
+            .hero p { font-size: 1.1rem; }
+
+            .welcome-content { grid-template-columns: 1fr; text-align: center; gap: 2rem; }
+            .welcome-text h3 { font-size: 2rem; }
+
+            .circular-seal { width: 260px; height: 260px; }
+            .barangay-logo { width: 190px; height: 190px; }
+            .logo-label { bottom: -20px; font-size: 0.85rem; padding: 8px 20px; }
+
+            .history-content { flex-direction: column; text-align: center; }
+            .vision-mission-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .officials-grid { grid-template-columns: 1fr; }
+            .official-card { flex-direction: column; text-align: center; }
+
+            .news-title h2 { font-size: 2rem; }
+            .news-grid { grid-template-columns: 1fr; }
+
+            .contact-grid { grid-template-columns: 1fr; }
+
+            .services-grid { grid-template-columns: 1fr; gap: 2rem; }
+
+            .cta-section-full { padding: 4rem 0; margin-top: 3rem; }
+            .cta-text h2 { font-size: 2.2rem; }
+            .cta-text p { font-size: 1.1rem; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+            .cta-button { width: 100%; max-width: 300px; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div id="loading"><div class="spinner"></div></div>
+
+    <!-- Header with Navigation (single-file app) -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="Logo1.jpg" alt="Barangay Logo" class="custom-logo">
+                    <div class="logo-text">
+                        <h1>Barangay Poblacion Ilawod</h1>
+                        <p>Passi City, Iloilo</p>
+                    </div>
+                </div>
+
+                <nav>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" data-page="home">Home</a></li>
+                        <li><a href="#services" data-page="services">Services</a></li>
+                        <li><a href="#news" data-page="news">News</a></li>
+                        <li><a href="#contact" data-page="contact">Contact</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO / HOME -->
+    <section id="home" class="hero" aria-label="Home">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <h2>Welcome to Barangay Poblacion Ilawod</h2>
+                <p>Your Most Trusted Friendly Community &amp; the Humble Partner in Passi City, Iloilo</p>
+                <p>"Together We Will Bring Passi City to It's Greater Heights!"</p>
+                <a href="#about" class="cta-button secondary">About us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome" aria-label="Welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <div class="welcome-text fade-in-up">
+                    <h3>Mabuhay!</h3>
+                    <p>
+                        Welcome to the official website of <span class="highlight">Barangay Poblacion Ilawod</span>,
+                        the heart of Passi City, Iloilo. We are committed to serving our community with transparency,
+                        efficiency, and genuine care for every resident.
+                    </p>
+                    <p>
+                        Our barangay is a vibrant community where tradition meets progress. We pride ourselves in fostering unity,
+                        promoting development, and ensuring the welfare of all our kababayans.
+                    </p>
+                </div>
+
+                <div class="seal-container">
+                    <div class="circular-seal fade-in-up">
+                        <img src="Logo1.jpg" alt="Barangay Seal" class="barangay-logo">
+                    </div>
+                    <div class="logo-label fade-in-up">Official Seal</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section" aria-label="About us">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>About Us</h2>
+                <p>Discover our rich history, guiding principles, and dedicated leadership</p>
+            </div>
+
+            <div class="history-card fade-in-up">
+                <div class="history-content">
+                    <div class="history-icon"><i class="fas fa-book-open"></i></div>
+                    <div>
+                        <h3>Our History</h3>
+                        <p>
+                            Barangay Poblacion Ilawod, the historic heart of Passi City, was established in
+                            <span class="highlight">1957</span> as one of the original barrios of Passi.
+                            Originally known as "Ilawod" meaning "downstream," our community has grown from a small riverside
+                            settlement into a vibrant urban center serving over 5,200 residents.
+                        </p>
+                        <p>
+                            Through decades of resilience, we've preserved our cultural heritage while embracing modern development.
+                            Today, we stand as a model barangay committed to progress and unity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vision-mission-grid fade-in-up">
+                <div class="vision-card">
+                    <div class="vm-icon"><i class="fas fa-eye"></i></div>
+                    <h4>Vision</h4>
+                    <p>A progressive, peaceful, and prosperous community where every resident enjoys quality services,
+                        sustainable development, and harmonious living.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
+                    <h4>Mission</h4>
+                    <p>To provide efficient public services, promote community welfare, preserve cultural heritage, and foster unity
+                        through transparent and responsive governance.</p>
+                </div>
+            </div>
+
+            <div class="officials-section fade-in-up">
+                <h3>Barangay Officials</h3>
+                <p class="officials-subtitle">Meet our dedicated team serving 24/7</p>
+
+                <div class="officials-grid">
+                    <div class="official-card punong-barangay">
+                        <div class="official-logo"><i class="fas fa-crown"></i></div>
+                        <div class="official-info">
+                            <h4>Punong Barangay</h4>
+                            <h5>PRES. <strong>BONG BONG MARCOS Jr.</strong></h5>
+                            <p>"Serving with integrity and compassion"</p>
+                        </div>
+                    </div>
+
+                    <div class="official-card kagawad-1">
+                        <div class="official-logo"><i class="fas fa-gavel"></i><span></span></div>
+                        <div class="official-info">
+                            <h4>Kagawad</h4>
+                            <h5>SEN. <strong>ALAN PETER CAYETANO</strong></h5>
+                            <p>Chairperson, Committee on Women &amp; Family</p>
+                        </div>
+                    </div>
+
+                    <div class="official-card kagawad-2">
+                        <div class="official-logo"><i class="fas fa-shield-alt"></i><span></span></div>
+                        <div class="official-info">
+                            <h4>Kagawad</h4>
+                            <h5>SEN. <strong>RONALD "BATO" DELA ROSA</strong></h5>
+                            <p>Chairperson, Committee on Peace &amp; Order</p>
+                        </div>
+                    </div>
+
+                    <div class="official-card kagawad-3">
+                        <div class="official-logo"><i class="fas fa-users"></i><span></span></div>
+                        <div class="official-info">
+                            <h4>Kagawad</h4>
+                            <h5>SEN. <strong>LITO LAPID</strong></h5>
+                            <p>Chairperson, Committee on Education</p>
+                        </div>
+                    </div>
+
+                    <div class="official-card kagawad-4">
+                        <div class="official-logo"><i class="fas fa-road"></i><span></span></div>
+                        <div class="official-info">
+                            <h4>Kagawad</h4>
+                            <h5>SEN. <strong>BONG REVILLA</strong></h5>
+                            <p>Chairperson, Committee on Infrastructure</p>
+                        </div>
+                    </div>
+
+                    <div class="official-card kagawad-5">
+                        <div class="official-logo"><i class="fas fa-heart"></i><span></span></div>
+                        <div class="official-info">
+                            <h4>Kagawad</h4>
+                            <h5>SEN. <strong>ROBIN PADILLA</strong></h5>
+                            <p>Chairperson, Committee on Health</p>
+                        </div>
+                    </div>
+
+                    <div class="official-card kagawad-6">
+                        <div class="official-logo"><i class="fas fa-seedling"></i><span></span></div>
+                        <div class="official-info">
+                            <h4>Kagawad</h4>
+                            <h5>SEN. <strong>RAFFY TULO</strong></h5>
+                            <p>Chairperson, Committee on Environment</p>
+                        </div>
+                    </div>
+
+                    <div class="official-card kagawad-7">
+                        <div class="official-logo"><i class="fas fa-handshake"></i><span></span></div>
+                        <div class="official-info">
+                            <h4>Kagawad</h4>
+                            <h5>SEN. <strong>ERWIN TULFO</strong></h5>
+                            <p>Chairperson, Committee on Youth &amp; Sports</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" aria-label="Stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item"><i class="fas fa-users"></i><span class="stat-number">5,200+</span><strong>Residents</strong></div>
+                <div class="stat-item"><i class="fas fa-home"></i><span class="stat-number">1,200+</span><strong>Households</strong></div>
+                <div class="stat-item"><i class="fas fa-calendar-check"></i><span class="stat-number">24/7</span><strong>Services</strong></div>
+                <div class="stat-item"><i class="fas fa-star"></i><span class="stat-number">95%</span><strong>Satisfaction</strong></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES (single file section) -->
+    <section id="services" class="hero" style="min-height: unset; padding: 5.5rem 0;" aria-label="Services">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <h2>Barangay Services</h2>
+                <p>Assistance • Good Service • 24/7 Community Support</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section" aria-label="Core services">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Our Core Services</h2>
+                <p>Comprehensive support for all your barangay needs with efficient processing and friendly service</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card fade-in-up">
+                    <div class="service-icon"><i class="fas fa-file-signature"></i></div>
+                    <h3>Clearance Processing</h3>
+                    <div class="service-time"><i class="fas fa-clock"></i> 15-30 minutes</div>
+                    <p>Business permits, residency clearances, and other official clearances processed quickly and efficiently.</p>
+                    <div class="service-requirements">
+                        <h4>Requirements:</h4>
+                        <ul class="requirements-list">
+                            <li>Valid ID</li>
+                            <li>Barangay Tax Clearance (if applicable)</li>
+                            <li>Completed application form</li>
+                            <li>2x2 ID photo (optional)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in-up">
+                    <div class="service-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Certificates</h3>
+                    <div class="service-time"><i class="fas fa-clock"></i> 10-20 minutes</div>
+                    <p>Birth, marriage, death, indigency, and other certificates issued on the spot.</p>
+                    <div class="service-requirements">
+                        <h4>Requirements:</h4>
+                        <ul class="requirements-list">
+                            <li>Valid ID of requester</li>
+                            <li>Authorization letter (if representative)</li>
+                            <li>Complete names and details</li>
+                            <li>Payment of fees</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in-up">
+                    <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Health Services</h3>
+                    <div class="service-time"><i class="fas fa-clock"></i> Walk-in / Appointment</div>
+                    <p>Free medical consultations, vaccination drives, health monitoring, and wellness programs.</p>
+                    <div class="service-requirements">
+                        <h4>Available Services:</h4>
+                        <ul class="requirements-list">
+                            <li>Free consultations</li>
+                            <li>Vaccinations &amp; boosters</li>
+                            <li>Blood pressure checks</li>
+                            <li>Medicine distribution</li>
+                            <li>Health seminars</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section-full" aria-label="Services CTA">
+        <div class="container">
+            <div class="cta-content fade-in-up">
+                <div class="cta-text">
+                    <h2>Need Assistance Right Now?</h2>
+                    <p>We're here 24/7 to serve you. Visit our Barangay Hall or call our hotline for immediate help.</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="tel:+63335550123" class="cta-button primary"><i class="fas fa-phone"></i> Call Hotline Now</a>
+                    <a href="#contact" class="cta-button secondary"><i class="fas fa-map-marker-alt"></i> Visit Barangay Hall</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS section -->
+    <section id="news" class="hero" style="min-height: unset; padding: 5.5rem 0;" aria-label="News">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <h2>News &amp; Announcements</h2>
+                <p>Stay tuned for the latest updates with our barangay.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-section" aria-label="Incoming events">
+        <div class="container">
+            <div class="news-title">
+                <h2>Incoming Events</h2>
+            </div>
+
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-date">March 20, 2026</div>
+                    <h3>Community Clean-Up Drive</h3>
+                    <p>All residents are invited to join our Barangay Clean-Up Drive this coming Saturday. Let's work together to maintain cleanliness and protect our environment.</p>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-date">March 15, 2026</div>
+                    <h3>Free Medical Check-Up</h3>
+                    <p>A free medical mission will be conducted at the Barangay Hall. Services include general check-up, blood pressure monitoring, and consultation.</p>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-date">March 10, 2026</div>
+                    <h3>Youth Sports Program Registration</h3>
+                    <p>Registration for the Summer Youth Sports Program is now open. Interested participants may visit the Barangay Office.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT section -->
+    <section id="contact" class="hero" style="min-height: unset; padding: 5.5rem 0;" aria-label="Contact">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <h2>Contact Us</h2>
+                <p>For more information about our whereabouts, contact us using the form below.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" aria-label="Contact form and info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form fade-in-up">
+                    <h3>Reach Out to Us</h3>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="acf52846-a798-463d-bcc0-d0f08b91d70e">
+
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="contact-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info fade-in-up">
+                    <h3>Barangay Information</h3>
+                    <div class="info-box"><i class="fas fa-map-marker-alt"></i><p>Barangay Poblacion Ilawod, Passi City, Iloilo</p></div>
+                    <div class="info-box"><i class="fas fa-phone"></i><p>+63 912 345 6789</p></div>
+                    <div class="info-box"><i class="fas fa-envelope"></i><p>barangayilawod@gmail.com</p></div>
+
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d489.3881510284621!2d122.6426372340313!3d11.105536322056736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33af14639e6f3135%3A0xecfe417c13152013!2sPassi%201%20Central%20School!5e0!3m2!1sen!2sph!4v1775125793421!5m2!1sen!2sph"
+                            style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (!target) return;
+
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                // Set active state immediately
+                document.querySelectorAll('.nav-menu a').forEach(a => a.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Set active link based on scroll position
+        const sections = [
+            { id: 'home', key: 'home' },
+            { id: 'services', key: 'services' },
+            { id: 'news', key: 'news' },
+            { id: 'contact', key: 'contact' },
+        ];
+
+        function updateActiveNav() {
+            const y = window.scrollY;
+            let current = 'home';
+
+            for (const s of sections) {
+                const el = document.getElementById(s.id);
+                if (!el) continue;
+                const top = el.offsetTop;
+                if (y >= top - 250) current = s.key;
+            }
+
+            document.querySelectorAll('.nav-menu a').forEach(a => {
+                const page = a.getAttribute('data-page');
+                a.classList.toggle('active', page === current);
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNav);
+        updateActiveNav();
+
+        // Loading overlay
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loading');
+            loader.style.opacity = '0';
+            loader.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => loader.style.display = 'none', 500);
+        });
+    </script>
+</body>
+</html>
+
